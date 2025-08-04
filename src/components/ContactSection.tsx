@@ -2,7 +2,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-5xl font-bold text-center text-gradient mb-16">Contact me</h2>
+        <h2 className="text-5xl font-bold text-center text-white mb-16">Contact me</h2>
         
         <div className="glass-panel text-center">
           <p className="text-xl text-muted-foreground mb-8">

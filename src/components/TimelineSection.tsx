@@ -15,7 +15,7 @@ const TimelineSection = ({ id, title, items }: TimelineSectionProps) => {
   return (
     <section id={id} className="min-h-screen py-20 px-6">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-5xl font-bold text-center text-gradient mb-16">{title}</h2>
+        <h2 className="text-5xl font-bold text-center text-white mb-16">{title}</h2>
         
         <div className="relative">
           {/* Timeline line */}

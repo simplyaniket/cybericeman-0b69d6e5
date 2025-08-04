@@ -64,7 +64,9 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-inter;
-    background-image: url('/lovable-uploads/f3846307-010a-4805-9d72-f112d8d6bc41.png');
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url('/lovable-uploads/f3846307-010a-4805-9d72-f112d8d6bc41.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -79,7 +81,7 @@ All colors MUST be HSL.
 @layer components {
   .glass {
     @apply backdrop-blur-md border border-white/10;
-    background: rgba(23, 27, 34, 0.3);
+    background: rgba(10, 10, 10, 0.4);
     box-shadow: 0 8px 32px hsl(220 13% 0% / 0.4);
   }
 

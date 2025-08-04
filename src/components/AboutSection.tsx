@@ -35,7 +35,7 @@ const AboutSection = () => {
         </div>
         
         <div className="mt-16">
-          <h3 className="text-3xl font-bold text-center text-gradient mb-8">Technologies</h3>
+          <h3 className="text-3xl font-bold text-center text-white mb-8">Technologies</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {technologies.map((tech, index) => (
               <span 
