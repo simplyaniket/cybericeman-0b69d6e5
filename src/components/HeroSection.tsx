@@ -13,16 +13,16 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex flex-col items-center justify-center text-center px-6">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 floating">
-          Cyber Security <span className="text-gradient">Hunter</span>
+          Cyber Security <span className="text-white">Hunter</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+        <p className="text-xl md:text-2xl text-white mb-8">
           Ethical Hacker and Penetration Tester
         </p>
         
         <Button 
           onClick={() => scrollToSection('projects')}
-          className="glass-card hover:cyber-glow transition-smooth mb-8 text-lg px-8 py-3"
+          className="bg-white text-black hover:bg-white/90 transition-smooth mb-8 text-lg px-8 py-3"
         >
           View My Work
         </Button>
