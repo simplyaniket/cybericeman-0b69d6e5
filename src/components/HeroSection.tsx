@@ -22,7 +22,7 @@ const HeroSection = () => {
         
         <Button 
           onClick={() => scrollToSection('projects')}
-          className="bg-white text-black hover:bg-white/90 transition-smooth mb-8 text-lg px-8 py-3"
+          className="glass-card hover:cyber-glow transition-smooth mb-8 text-lg px-8 py-3 text-white border-white/20"
         >
           View My Work
         </Button>

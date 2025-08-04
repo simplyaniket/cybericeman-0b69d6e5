@@ -23,10 +23,10 @@ const AboutSection = () => {
           </div>
           
           <div className="order-1 md:order-2">
-            <div className="bg-white text-black rounded-xl p-6 fade-in">
-              <h2 className="text-4xl font-bold text-black mb-6">About Me</h2>
-              <p className="text-lg text-black leading-relaxed">
-                I'm Aniket Singh a Computer Science student with a singular focus on cybersecurity. 
+            <div className="glass-panel fade-in">
+              <h2 className="text-4xl font-bold text-white mb-6">About Me</h2>
+              <p className="text-lg text-white leading-relaxed">
+                I'm Aniket Singh a Computer Science student with a singular focus on cybersecurity.
                 From my base in Bengaluru, I dive into penetration testing and bug bounty programs, 
                 thriving on the constant challenge of breaking things to make them stronger.
               </p>
