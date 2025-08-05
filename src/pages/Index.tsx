@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import TimelineSection from '@/components/TimelineSection';
+import CyberNewsSection from '@/components/CyberNewsSection';
 import VulnerabilitiesSection from '@/components/VulnerabilitiesSection';
 import NotesSection from '@/components/NotesSection';
 import ProjectsSection from '@/components/ProjectsSection';
@@ -65,11 +66,7 @@ const Index = () => {
           <main>
             <HeroSection />
             <AboutSection />
-            <TimelineSection 
-              id="news" 
-              title="Cyber News" 
-              items={cyberNewsItems} 
-            />
+            <CyberNewsSection />
             <VulnerabilitiesSection />
             <TimelineSection 
               id="education" 
