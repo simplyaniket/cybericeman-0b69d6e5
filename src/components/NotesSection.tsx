@@ -6,7 +6,7 @@ const NotesSection = () => {
         
         <div className="glass-panel">
           <h3 className="text-2xl font-bold text-foreground mb-6">Cybersecurity Research & Analysis</h3>
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
+          <div className="space-y-4 text-white leading-relaxed">
             <p>
               This section contains my ongoing research notes, vulnerability analysis, and penetration testing methodologies. 
               I document various attack vectors, defensive strategies, and emerging threats in the cybersecurity landscape.
