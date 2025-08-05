@@ -80,9 +80,9 @@ All colors MUST be HSL.
 
 @layer components {
   .glass {
-    @apply backdrop-blur-sm border border-white/5;
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    @apply backdrop-blur-md border border-white/20;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   }
 
   .glass-panel {
