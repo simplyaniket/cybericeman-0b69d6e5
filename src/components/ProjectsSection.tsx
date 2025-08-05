@@ -5,9 +5,13 @@ const ProjectsSection = () => {
         <h2 className="text-5xl font-bold text-center text-white mb-16">Projects</h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="glass-panel hover:cyber-glow transition-smooth">
-            <div className="w-full h-48 bg-muted rounded-lg mb-4 flex items-center justify-center">
-              <span className="text-white">Project Image</span>
+          <div className="glass-panel hover:cyber-glow transition-smooth cursor-pointer" onClick={() => window.open('#', '_blank')}>
+            <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+              <img 
+                src="/lovable-uploads/eff3f406-70b5-41d2-8cd8-01b30b375b80.png" 
+                alt="CyberSaarthi Project" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <h3 className="text-2xl font-bold text-primary mb-3">CyberSaarthi</h3>
             <p className="text-white mb-6 leading-relaxed">
