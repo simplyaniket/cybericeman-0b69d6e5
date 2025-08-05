@@ -7,7 +7,7 @@ const VulnerabilitiesSection = () => {
     {
       id: 1,
       cve: "CVE-2024-1234",
-      title: "Remote Code Execution Vulnerability",
+      title: "Code Execution Vulnerability",
       description: "Critical vulnerability allowing remote code execution through buffer overflow in network services.",
       image: vulnerability1
     },
