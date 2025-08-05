@@ -13,10 +13,10 @@ const Header = () => {
           <span className="text-xl font-bold text-white">ICEMAN</span>
         </div>
         
-        <nav className="hidden md:flex space-x-8">
+        <nav className="flex flex-wrap justify-center md:justify-end space-x-2 md:space-x-8">
           {[
-            { name: 'Cyber News', id: 'news' },
-            { name: 'Vulnerabilities', id: 'vulnerabilities' },
+            { name: 'News', id: 'news' },
+            { name: 'Vulns', id: 'vulnerabilities' },
             { name: 'Projects', id: 'projects' },
             { name: 'Notes', id: 'notes' },
             { name: 'Contact', id: 'contact' }
@@ -24,7 +24,7 @@ const Header = () => {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-foreground hover:text-primary transition-smooth font-medium text-sm md:text-base px-2 py-1"
             >
               {item.name}
             </button>
