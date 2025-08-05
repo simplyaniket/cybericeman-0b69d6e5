@@ -1,3 +1,7 @@
+import vulnerability1 from '@/assets/vulnerability-1.jpg';
+import vulnerability2 from '@/assets/vulnerability-2.jpg';
+import vulnerability3 from '@/assets/vulnerability-3.jpg';
+
 const VulnerabilitiesSection = () => {
   const vulnerabilities = [
     {
@@ -5,21 +9,21 @@ const VulnerabilitiesSection = () => {
       cve: "CVE-2024-1234",
       title: "Remote Code Execution Vulnerability",
       description: "Critical vulnerability allowing remote code execution through buffer overflow in network services.",
-      image: "/api/placeholder/300/200"
+      image: vulnerability1
     },
     {
       id: 2,
       cve: "CVE-2024-5678",
       title: "SQL Injection in Web Application",
       description: "High severity SQL injection vulnerability found in authentication bypass mechanisms.",
-      image: "/api/placeholder/300/200"
+      image: vulnerability2
     },
     {
       id: 3,
       cve: "CVE-2024-9012",
       title: "Cross-Site Scripting (XSS)",
       description: "Medium severity XSS vulnerability affecting user session management and data integrity.",
-      image: "/api/placeholder/300/200"
+      image: vulnerability3
     }
   ];
 
@@ -31,8 +35,12 @@ const VulnerabilitiesSection = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {vulnerabilities.map((vuln) => (
             <div key={vuln.id} className="glass-panel hover:cyber-glow transition-smooth">
-              <div className="w-full h-48 bg-muted rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-muted-foreground">Vulnerability Image</span>
+              <div className="w-full h-48 rounded-lg mb-4 overflow-hidden">
+                <img 
+                  src={vuln.image} 
+                  alt={vuln.title} 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-primary mb-2">{vuln.cve}</h3>
               <h4 className="text-lg font-semibold text-foreground mb-3">{vuln.title}</h4>
