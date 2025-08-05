@@ -40,7 +40,7 @@ const AboutSection = () => {
             {technologies.map((tech, index) => (
               <span 
                 key={index}
-                className="glass-card text-foreground hover:cyber-glow transition-smooth cursor-default"
+                className="glass-card text-white hover:cyber-glow transition-smooth cursor-default"
               >
                 {tech}
               </span>

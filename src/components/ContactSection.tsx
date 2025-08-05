@@ -5,13 +5,13 @@ const ContactSection = () => {
         <h2 className="text-5xl font-bold text-center text-white mb-16">Contact me</h2>
         
         <div className="glass-panel text-center">
-          <p className="text-xl text-muted-foreground mb-8">
+          <p className="text-xl text-white mb-8">
             Feel free to reach out via email.
           </p>
           
           <div className="space-y-4">
             <div>
-              <p className="text-sm text-muted-foreground mb-2">Personal Email:</p>
+              <p className="text-sm text-white mb-2">Personal Email:</p>
               <a 
                 href="mailto:Aniketsinghgl2004@gmail.com"
                 className="text-lg text-primary hover:text-accent transition-smooth font-medium"
@@ -21,7 +21,7 @@ const ContactSection = () => {
             </div>
             
             <div>
-              <p className="text-sm text-muted-foreground mb-2">College Email:</p>
+              <p className="text-sm text-white mb-2">College Email:</p>
               <a 
                 href="mailto:aniket1.mitblr2023@learner.manipal.edu"
                 className="text-lg text-primary hover:text-accent transition-smooth font-medium"
