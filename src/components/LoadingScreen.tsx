@@ -26,7 +26,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="text-center">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 floating">
-          Welcome to Cyber <span className="text-gradient">ICEMAN</span>
+          Welcome to Cyber <span className="text-white">ICEMAN</span>
         </h1>
         
         <div className="glass-panel w-96 mx-auto">
