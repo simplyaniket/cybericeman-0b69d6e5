@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, Play } from "lucide-react";
+import { scrollTo } from "./utils";
 
 const products = [
   { emoji: "🥛", name: "Organic Milk 1L", original: 85, days: 2 },
@@ -65,10 +66,6 @@ const DashboardMockup = () => {
 };
 
 const HeroSection = () => {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden" style={{ background: "linear-gradient(135deg, #0f1a0f 0%, #1a2e1a 50%, #0f2d1f 100%)" }}>
       {/* Floating food decorations */}

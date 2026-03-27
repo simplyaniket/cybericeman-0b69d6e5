@@ -1,8 +1,6 @@
-const FinalCTASection = () => {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+import { scrollTo } from "./utils";
 
+const FinalCTASection = () => {
   return (
     <section id="cta" className="relative py-24 overflow-hidden" style={{ background: "linear-gradient(135deg, #0f1a0f 0%, #1a3a1a 100%)" }}>
       {/* Floating food emojis */}

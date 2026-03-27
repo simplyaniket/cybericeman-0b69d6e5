@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Camera, QrCode } from "lucide-react";
+import { QrCode, Smartphone } from "lucide-react";
 
 type ScanState = "idle" | "scanning" | "result";
 
@@ -89,17 +89,13 @@ const QRScanSection = () => {
     setTimeout(() => setScanState("result"), 1500);
   };
 
-  const handleCameraScan = async () => {
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-      stream.getTracks().forEach((t) => t.stop());
-      setScanState("scanning");
-      setTimeout(() => setScanState("result"), 1500);
-    } catch {
-      setCameraError(true);
-      setScanState("scanning");
-      setTimeout(() => setScanState("result"), 1500);
-    }
+  const handleCameraScan = () => {
+    // Camera-based QR scanning requires a dedicated QR library.
+    // Show demo mode with a clear label so users aren't misled by a
+    // permission request that doesn't actually scan anything.
+    setCameraError(true);
+    setScanState("scanning");
+    setTimeout(() => setScanState("result"), 1500);
   };
 
   const handleReset = () => {
@@ -138,11 +134,11 @@ const QRScanSection = () => {
                   onClick={handleCameraScan}
                   className="border-2 border-green-500 text-green-700 px-6 py-3 rounded-xl font-bold hover:bg-green-50 transition-all flex items-center gap-2 justify-center"
                 >
-                  <Camera size={18} /> Use Camera
+                  <Smartphone size={18} /> Demo: Camera Mode
                 </button>
               </div>
               {cameraError && (
-                <p className="text-orange-500 text-xs mt-2">Camera unavailable — showing demo mode</p>
+                <p className="text-orange-500 text-xs mt-2">📱 Full camera scanning available in the native app — showing demo result</p>
               )}
             </div>
           )}
