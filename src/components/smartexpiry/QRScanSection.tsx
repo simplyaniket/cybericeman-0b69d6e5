@@ -89,7 +89,7 @@ const QRScanSection = () => {
     setTimeout(() => setScanState("result"), 1500);
   };
 
-  const handleCameraScan = () => {
+  const handleCameraDemoScan = () => {
     // Camera-based QR scanning requires a dedicated QR library.
     // Show demo mode with a clear label so users aren't misled by a
     // permission request that doesn't actually scan anything.
@@ -131,7 +131,7 @@ const QRScanSection = () => {
                   <QrCode size={18} /> Try Demo Scan
                 </button>
                 <button
-                  onClick={handleCameraScan}
+                  onClick={handleCameraDemoScan}
                   className="border-2 border-green-500 text-green-700 px-6 py-3 rounded-xl font-bold hover:bg-green-50 transition-all flex items-center gap-2 justify-center"
                 >
                   <Smartphone size={18} /> Demo: Camera Mode
