@@ -58,7 +58,7 @@ const PriceTagResult = () => (
         ⏰ <span className="font-semibold">2 days remaining</span>
       </div>
       <div className="bg-green-50 border border-green-200 rounded-lg px-3 py-2 text-sm text-green-700 flex items-center gap-2">
-        ✅ <span className="font-semibold">Still Fresh &amp; Safe</span>
+        ✅ <span className="font-semibold">Still Fresh & Safe</span>
       </div>
     </div>
     <button className="w-full bg-green-500 text-white py-3 rounded-xl font-bold cartoon-border hover:bg-green-400 transition-colors">
