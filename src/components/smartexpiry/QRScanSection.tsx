@@ -82,7 +82,7 @@ const ScanAnimation = () => (
 
 const QRScanSection = () => {
   const [scanState, setScanState] = useState<ScanState>("idle");
-  const [cameraError, setCameraError] = useState(false);
+  const [isDemoMode, setIsDemoMode] = useState(false);
 
   const handleDemoScan = () => {
     setScanState("scanning");
@@ -93,14 +93,14 @@ const QRScanSection = () => {
     // Camera-based QR scanning requires a dedicated QR library.
     // Show demo mode with a clear label so users aren't misled by a
     // permission request that doesn't actually scan anything.
-    setCameraError(true);
+    setIsDemoMode(true);
     setScanState("scanning");
     setTimeout(() => setScanState("result"), 1500);
   };
 
   const handleReset = () => {
     setScanState("idle");
-    setCameraError(false);
+    setIsDemoMode(false);
   };
 
   return (
@@ -137,7 +137,7 @@ const QRScanSection = () => {
                   <Smartphone size={18} /> Demo: Camera Mode
                 </button>
               </div>
-              {cameraError && (
+              {isDemoMode && (
                 <p className="text-orange-500 text-xs mt-2">📱 Full camera scanning available in the native app — showing demo result</p>
               )}
             </div>

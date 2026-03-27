@@ -1,4 +1,5 @@
 import { scrollTo } from "./utils";
+import { STORES_COUNT } from "./constants";
 
 const FinalCTASection = () => {
   return (
@@ -22,7 +23,7 @@ const FinalCTASection = () => {
           Stop Losing Money to <span className="text-green-400">Expired Inventory.</span>
         </h2>
         <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
-          Join 2,400+ retailers already using SmartExpiry to turn expiry dates into revenue. Setup in 48 hours, ROI in 30 days.
+          Join {STORES_COUNT} retailers already using SmartExpiry to turn expiry dates into revenue. Setup in 48 hours, ROI in 30 days.
         </p>
         <button
           onClick={() => scrollTo("pricing")}

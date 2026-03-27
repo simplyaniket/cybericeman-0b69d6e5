@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, Play } from "lucide-react";
 import { scrollTo } from "./utils";
+import { STORES_COUNT } from "./constants";
 
 const products = [
   { emoji: "🥛", name: "Organic Milk 1L", original: 85, days: 2 },
@@ -84,7 +85,7 @@ const HeroSection = () => {
           {/* Left: Text */}
           <div>
             <div className="inline-flex items-center gap-2 bg-green-500/20 border border-green-500/40 rounded-full px-4 py-2 mb-6">
-              <span className="text-green-400 text-sm font-bold">🚀 Now live in 2,400+ stores across India</span>
+              <span className="text-green-400 text-sm font-bold">🚀 Now live in {STORES_COUNT} stores across India</span>
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6" style={{ fontFamily: "'Fredoka One', cursive" }}>
               Turn <span className="text-green-400">Expiry Dates</span> Into Revenue
@@ -119,7 +120,7 @@ const HeroSection = () => {
           {[
             { value: "₹2.4Cr", label: "Saved for retailers" },
             { value: "93%", label: "Waste reduction" },
-            { value: "2,400+", label: "Stores onboarded" },
+            { value: STORES_COUNT, label: "Stores onboarded" },
           ].map((stat, i) => (
             <div key={i} className="text-center">
               <div className="text-3xl md:text-4xl font-bold text-green-400" style={{ fontFamily: "'Fredoka One', cursive" }}>{stat.value}</div>
